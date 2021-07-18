@@ -2,13 +2,16 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func givenBirthDate(n int) {
+	var currentDate int = time.Now().Year()
+	fmt.Println(currentDate)
 
-	result := 2021 - n
+	result := currentDate - n
 
-	fmt.Printf("Your birth date is: %d", result)
+	fmt.Printf("Your birth year is: %d", result)
 }
 
 func main() {
