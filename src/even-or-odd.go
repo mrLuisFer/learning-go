@@ -16,10 +16,10 @@ func evenOrOdd(n int) bool {
 	}
 }
 
-func main() {
-	fmt.Print("Insert number: ")
-	var n int
+// func main() {
+// 	fmt.Print("Insert number: ")
+// 	var n int
 
-	var isEvenOrOdd bool = evenOrOdd(n)
-	fmt.Println(isEvenOrOdd)
-}
+// 	var isEvenOrOdd bool = evenOrOdd(n)
+// 	fmt.Println(isEvenOrOdd)
+// }
