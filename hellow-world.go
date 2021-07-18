@@ -45,7 +45,7 @@ func mathPrompt() {
 	fmt.Print("Insert operation:")
 	fmt.Scanln(&operationSymbol)
 
-		if operationSymbol == "+" || operationSymbol == "add" {
+	if operationSymbol == "+" || operationSymbol == "add" {
 		fmt.Printf("\n Result: %d",num1 + num2)
 	} else if operationSymbol == "-" || operationSymbol == "sub" {
 		fmt.Printf("\n Result: %d",num1 - num2)
