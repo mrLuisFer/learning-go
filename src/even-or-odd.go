@@ -20,7 +20,6 @@ func main() {
 	fmt.Print("Insert number: ")
 	var n int
 
-
 	var isEvenOrOdd bool = evenOrOdd(n)
 	fmt.Println(isEvenOrOdd)
 }

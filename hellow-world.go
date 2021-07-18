@@ -9,7 +9,6 @@ func sayHello(name string)  {
 	fmt.Println(msg)
 }
 
-
 func basicMath(n int, n2 int, operationSymbol string) {
 	
 	var result int
@@ -28,7 +27,6 @@ func basicMath(n int, n2 int, operationSymbol string) {
 	fmt.Println(result)
 }
 
-
 func mathPrompt() {
 	var (
 		num1 int
@@ -45,6 +43,7 @@ func mathPrompt() {
 	fmt.Print("Insert operation:")
 	fmt.Scanln(&operationSymbol)
 
+	// Spaghetti alert
 	if operationSymbol == "+" || operationSymbol == "add" {
 		fmt.Printf("\n Result: %d",num1 + num2)
 	} else if operationSymbol == "-" || operationSymbol == "sub" {
@@ -60,6 +59,5 @@ func main() {
 		sayHello("Luis")
 		basicMath(3,4, "+")
 		basicMath(5,9, "-")
-
 		mathPrompt()
 }
