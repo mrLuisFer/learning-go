@@ -26,20 +26,25 @@ import (
 	"fmt"
 	"os"
 )
+
+func openFile(path string) {
+  file, err := os.Open(path)
+  if err != nil {
+    fmt.Println(err)
+  }
+  defer file.Close()
+
+  scanner := bufio.NewScanner(file)
+  for scanner.Scan() {
+    fmt.Println(scanner.Text())
+  }
+
+  if err := scanner.Err(); err != nil {
+    fmt.Println(err)
+  }
+}
  
 func main() {
-    file, err := os.Open("text.txt")
-    if err != nil {
-        fmt.Println(err)
-    }
-    defer file.Close()
- 
-    scanner := bufio.NewScanner(file)
-    for scanner.Scan() {
-        fmt.Println(scanner.Text())
-    }
- 
-    if err := scanner.Err(); err != nil {
-        fmt.Println(err)
-    }
+  var path string = "text.txt"
+  openFile(path)
 }
