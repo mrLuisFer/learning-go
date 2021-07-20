@@ -1,24 +1,3 @@
-// package main
-
-// import (
-// 	"fmt"
-// 	"io/ioutil"
-// )
-
-// func main() {
-
-// 		file, err := ioutil.ReadFile("read.txt")
-
-// 		if err != nil {
-//      fmt.Print(err)
-//     }
-
-//     str := string(file)
-
-//     // show file data
-//     fmt.Println(str)
-// }
-
 package main
 
 import (
@@ -28,7 +7,8 @@ import (
 )
 
 func openFile(path string) {
-  file, err := os.Open(path)
+  file, err := os.OpenFile(path, os.O_RDWR, 0755)
+
   if err != nil {
     fmt.Println(err)
   }
@@ -36,6 +16,7 @@ func openFile(path string) {
 
   scanner := bufio.NewScanner(file)
   for scanner.Scan() {
+    fmt.Print("Opening file... \n")
     fmt.Println(scanner.Text())
   }
 
@@ -45,6 +26,8 @@ func openFile(path string) {
 }
  
 func main() {
-  var path string = "text.txt"
+  var path string = "./text.txt"
+  var localPath string = "./src/read-file/textlocal.txt"
   openFile(path)
+  openFile(localPath)
 }
