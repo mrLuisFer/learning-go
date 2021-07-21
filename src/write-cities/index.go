@@ -14,7 +14,7 @@ func createFile(fileName string) {
 
 	file.WriteString("Texto escrito con golang")
 }
- 
+
 func main() {
 	var file = "cities.txt"
 	createFile(file)
