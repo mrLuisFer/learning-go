@@ -30,5 +30,6 @@ func main() {
 
 	if (command == "help") {
 		print("Prints this help message")
+		help()	
 	}
 }

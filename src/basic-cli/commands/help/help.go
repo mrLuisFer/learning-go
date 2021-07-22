@@ -1,7 +1,7 @@
-package commands
+package help
 
 import "fmt"
 
-func help() {
+func helpComand() {
 	fmt.Print("help")
 }
