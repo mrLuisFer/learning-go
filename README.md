@@ -21,7 +21,7 @@ In your terminal, run:
   go run some-file.go
 ```
 
-## Info
+## ❄ Info
 
 The basic CLI inside is not complete
 
