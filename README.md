@@ -20,3 +20,11 @@ In your terminal, run:
 ```bash
   go run some-file.go
 ```
+
+## Info
+
+The basic CLI inside is not complete
+
+If you want to see a basic example, although better done, you can see it in the following repository:
+
+[mrLuisFer-go-basic-cli](https://github.com/mrLuisFer/go-basic-cli)
